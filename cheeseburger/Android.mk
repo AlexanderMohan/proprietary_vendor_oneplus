@@ -16,7 +16,17 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),cheeseburger)
+ifeq ($(TARGET_DEVICE),msm8998)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libdualcameraddm
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/vendor/lib/libdualcameraddm.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := IFAAService

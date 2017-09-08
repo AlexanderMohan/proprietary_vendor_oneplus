@@ -753,6 +753,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/qcril.db:vendor/qcril.db
 
 PRODUCT_PACKAGES += \
+    libdualcameraddm \
     libloc_api_v02 \
     libbtnv \
     libgpustats \
